@@ -1,0 +1,15 @@
+{
+    "name": "mybundle/image-resizer-bundle",
+    "description": "Resize images and create thumbnails",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.3.9",
+        "symfony/framework-bundle": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyBundle\\ImageResizerBundle\\": "src/"
+        }
+    },
+    "license": "MIT"
+}
