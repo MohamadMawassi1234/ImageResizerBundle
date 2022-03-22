@@ -3,5 +3,6 @@ services:
     class: MyBundle\ImageResizerBundle\EventSubscriber\ResponseSubscriber
     arguments:
       $parameterBag: "@parameter_bag"
+
     tags:
       - { name: kernel.event_subscriber }
