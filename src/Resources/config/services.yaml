@@ -1,8 +1,9 @@
 services:
-  mybundle_image_resizer.response_subscriber:
-    class: MyBundle\ImageResizerBundle\EventSubscriber\ResponseSubscriber
+  mybundle_image_resizer.image_resizer_subscriber:
+    class: MyBundle\ImageResizerBundle\EventSubscriber\ImageResizerSubscriber
     arguments:
       $parameterBag: "@parameter_bag"
+      $entityManager: "@doctrine.orm.entity_manager"
 
     tags:
-      - { name: kernel.event_subscriber }
+      - { name: doctrine.event_subscriber, connection: default }

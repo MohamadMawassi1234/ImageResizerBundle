@@ -4,7 +4,8 @@
     "type": "symfony-bundle",
     "require": {
         "php": ">=7.3.9",
-        "symfony/framework-bundle": "^5.2"
+        "symfony/framework-bundle": "^5.2",
+        "doctrine/orm": "^2.11"
     },
     "autoload": {
         "psr-4": {
